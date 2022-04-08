@@ -1,0 +1,11 @@
+body{
+    main{
+        position: relative;
+        .bg-image{
+            min-height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}

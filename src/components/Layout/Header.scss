@@ -1,0 +1,17 @@
+// color variables
+$charcoal: #565f70;
+$amber: #ffb74c;
+$mint: #7cf3a0;
+$fuchsia: #ff5d88;
+
+body {
+  header {
+    background-color: $mint;
+    color: $fuchsia;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

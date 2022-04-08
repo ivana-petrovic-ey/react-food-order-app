@@ -1,6 +1,5 @@
 # React project
 
----
 This is an exercise project for building a Food Ordering App in React.
 
 ---

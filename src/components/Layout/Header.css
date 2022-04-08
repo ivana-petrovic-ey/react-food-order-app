@@ -1,0 +1,8 @@
+body header {
+  background-color: #7cf3a0;
+  color: #ff5d88;
+}
+body header .nav {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=Header.css.map */
