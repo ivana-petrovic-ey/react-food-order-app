@@ -1,0 +1,38 @@
+// color variables
+$charcoal: #565f70;
+$amber: #ffb74c;
+$mint: #7cf3a0;
+$fuchsia: #ff5d88;
+$green: #01a601;
+$blue: #11579b;
+
+.mealsListContainer{
+    padding: 2rem;
+    background-color: $amber;
+    border-radius: 15px;
+    color: #fff;
+    margin: auto;
+    width: 60%;
+    margin: auto;
+    animation: meals-appear 1s ease-out forwards;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
+
+@keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,26 @@
+.mealsListContainer {
+  padding: 2rem;
+  background-color: #ffb74c;
+  border-radius: 15px;
+  color: #fff;
+  margin: auto;
+  width: 60%;
+  margin: auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+.mealsListContainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

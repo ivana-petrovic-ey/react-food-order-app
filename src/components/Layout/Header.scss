@@ -3,15 +3,57 @@ $charcoal: #565f70;
 $amber: #ffb74c;
 $mint: #7cf3a0;
 $fuchsia: #ff5d88;
+$green: #01a601;
+$blue: #11579b;
 
-body {
-  header {
-    background-color: $mint;
-    color: $fuchsia;
+header {
+  background-color: $mint;
+  color: $fuchsia;
+  padding: 1.5rem 0;
 
-    .nav {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    button {
+      background-color: $fuchsia;
+      border: 1px solid $fuchsia;
+      border-radius: 15px;
+      color: #fff;
+      padding: 1rem;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .cart-svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .cart-text {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        white-space: nowrap;
+        width: inherit;
+      }
+
+      .cart-number {
+        font-size: 1.5rem;
+        color: #fff;
+        line-height: 1.5rem;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $amber;
+        padding: 0.5rem;
+      }
     }
   }
 }

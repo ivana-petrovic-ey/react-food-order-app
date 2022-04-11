@@ -6,4 +6,20 @@ body main .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}/*# sourceMappingURL=Main.css.map */
+}
+body main .meals {
+  background-color: #7cf3a0;
+  padding: 2rem 0;
+  color: #11579b;
+}
+body main .meals .mealsInfo {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+}
+body main .meals .mealsInfo h2 {
+  margin: 0 0 2rem 0;
+  color: #ff5d88;
+  font-size: 1.7em;
+  font-weight: 700;
+}

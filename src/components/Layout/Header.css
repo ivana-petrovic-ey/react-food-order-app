@@ -1,8 +1,45 @@
-body header {
+header {
   background-color: #7cf3a0;
   color: #ff5d88;
+  padding: 1.5rem 0;
 }
-body header .nav {
+header .nav {
   display: flex;
   justify-content: space-between;
-}/*# sourceMappingURL=Header.css.map */
+  align-items: center;
+}
+header .nav h1 {
+  margin: 0;
+}
+header .nav button {
+  background-color: #ff5d88;
+  border: 1px solid #ff5d88;
+  border-radius: 15px;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+header .nav button .cart-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+header .nav button .cart-text {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  width: inherit;
+}
+header .nav button .cart-number {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffb74c;
+  padding: 0.5rem;
+}
