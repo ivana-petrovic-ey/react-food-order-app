@@ -33,7 +33,7 @@ const Meals = (props) => {
 
   return (
     <div className="mealsListContainer">
-        <ul>{mealsList}</ul>
+        <ul className="mealsList">{mealsList}</ul>
     </div>
   );
 };

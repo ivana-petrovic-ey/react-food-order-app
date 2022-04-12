@@ -1,0 +1,14 @@
+.listItemMeal div {
+  background-color: #ff5d88;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.listItemMeal div h3 {
+  margin: 0 0 1rem;
+}
+.listItemMeal div p {
+  margin: 0;
+}
+.listItemMeal div p:first-of-type {
+  margin-bottom: 0.5rem;
+}

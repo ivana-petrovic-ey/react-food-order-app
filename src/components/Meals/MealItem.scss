@@ -1,0 +1,28 @@
+// color variables
+$charcoal: #565f70;
+$amber: #ffb74c;
+$mint: #7cf3a0;
+$fuchsia: #ff5d88;
+$green: #01a601;
+$blue: #11579b;
+
+.listItemMeal {
+    div {
+        background-color: $fuchsia;
+        padding: 1rem;
+        border-radius: 15px;
+
+        h3{
+            margin: 0 0 1rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p:first-of-type{
+            margin-bottom: 0.5rem;
+        }
+
+  }
+}
