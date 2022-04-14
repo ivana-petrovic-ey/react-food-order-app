@@ -32,9 +32,9 @@ const Meals = (props) => {
   const mealsList = DUMMY_MEALS.map(el => <MealItem key={el.id} name={el.name} description={el.description} price={el.price}/>);
 
   return (
-    <div className="mealsListContainer">
+    <article className="mealsListContainer">
         <ul className="mealsList">{mealsList}</ul>
-    </div>
+    </article>
   );
 };
 

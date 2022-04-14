@@ -1,14 +1,38 @@
-.mealsListContainer {
+.meals {
+  background-color: #fff;
+  color: #fff;
+  padding: 5rem 0;
+}
+.meals .mealsInfo {
+  text-align: center;
   padding: 2rem;
-  background-color: #ffb74c;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  animation: meals-appear 1s ease-out forwards;
+}
+.meals .mealsInfo h2 {
+  margin: 0 0 2rem 0;
+  color: #ff5d88;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px #fff;
+}
+.meals .mealsInfo p {
+  font-size: 1.2rem;
+}
+.meals .mealsListContainer {
+  padding: 2rem;
+  background-color: #ff5d88;
   border-radius: 15px;
   color: #fff;
   margin: auto;
   width: 60%;
   margin: auto;
   animation: meals-appear 1s ease-out forwards;
+  animation-delay: 300ms;
 }
-.mealsListContainer ul {
+.meals .mealsListContainer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;

@@ -10,30 +10,10 @@ body {
   main {
     position: relative;
 
-    .bg-image {
-      min-height: 60vh;
+    .bg-image1 {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-    }
-
-    .meals {
-      background-color: $mint;
-      padding: 2rem 0;
-      color: $blue;
-
-      .mealsInfo {
-        text-align: center;
-        margin-bottom: 1rem;
-        padding: 2rem 0;
-
-        h2 {
-          margin: 0 0 2rem 0;
-          color: $fuchsia;
-          font-size: 1.7em;
-          font-weight: 700;
-        }
-      }
     }
   }
 }
