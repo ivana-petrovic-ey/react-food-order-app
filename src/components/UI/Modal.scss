@@ -1,0 +1,111 @@
+// color variables
+$charcoal: #565f70;
+$amber: #ffb74c;
+$mint: #7cf3a0;
+$fuchsia: #ff5d88;
+$green: #01a601;
+$blue: #11579b;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $charcoal;
+
+    ul {
+        margin: 0;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0;
+        max-height: 20rem;
+        overflow: auto;
+        font-weight: 600;
+        color: $fuchsia;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.actions {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex: 1;
+}
+
+.actions button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $fuchsia;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+}
+
+.actions button:hover,
+.actions button:active {
+    background-color: $fuchsia;
+    border-color: $fuchsia;
+    color: white;
+}
+
+.actions .button--alt {
+    color: $fuchsia;
+}
+
+.actions .button {
+    background-color: $fuchsia;
+    color: white;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 30vh;
+    left: 25%;
+    width: 50%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;   
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 40rem;
+        left: calc(50% - 20rem);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

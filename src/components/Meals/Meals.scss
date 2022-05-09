@@ -28,13 +28,13 @@ $blue: #11579b;
         }
 
         p {
-          font-size: 1.2rem;
+            font-size: 1.2rem;
         }
     }
 
     .mealsListContainer {
         padding: 2rem;
-        background-color: $fuchsia;
+        background-color: $amber;
         border-radius: 15px;
         color: #fff;
         margin: auto;
@@ -50,6 +50,42 @@ $blue: #11579b;
             display: flex;
             gap: 1rem;
             flex-direction: column;
+
+            .listItemMeal {
+                background-color: #fff;
+                border-radius: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .meal-form {
+                    label {
+                        margin-right: 10px;
+                    }
+                    
+                    input {
+                        margin-right: 10px;
+
+                        &:focus-visible {
+                            outline: none;
+                            background-color: #fcf9f0;
+                            border: 1px solid $amber;
+                        }
+                    }
+
+                    input,
+                    button {
+                        padding: 0.5rem;
+                        border: 1px solid $fuchsia;
+                        border-radius: 5px;
+                    }
+
+                    button {
+                        background-color: $fuchsia;
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }

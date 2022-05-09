@@ -23,7 +23,7 @@
 }
 .meals .mealsListContainer {
   padding: 2rem;
-  background-color: #ff5d88;
+  background-color: #ffb74c;
   border-radius: 15px;
   color: #fff;
   margin: auto;
@@ -39,6 +39,34 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
+}
+.meals .mealsListContainer ul .listItemMeal {
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meals .mealsListContainer ul .listItemMeal .meal-form label {
+  margin-right: 10px;
+}
+.meals .mealsListContainer ul .listItemMeal .meal-form input {
+  margin-right: 10px;
+}
+.meals .mealsListContainer ul .listItemMeal .meal-form input:focus-visible {
+  outline: none;
+  background-color: #fcf9f0;
+  border: 1px solid #ffb74c;
+}
+.meals .mealsListContainer ul .listItemMeal .meal-form input,
+.meals .mealsListContainer ul .listItemMeal .meal-form button {
+  padding: 0.5rem;
+  border: 1px solid #ff5d88;
+  border-radius: 5px;
+}
+.meals .mealsListContainer ul .listItemMeal .meal-form button {
+  background-color: #ff5d88;
+  color: #fff;
 }
 
 @keyframes meals-appear {
