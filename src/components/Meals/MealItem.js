@@ -5,17 +5,17 @@ import "./MealItem.css";
 import MealItemform from "./MealItemForm";
 
 const MealItem = (props) => {
-    const cartCtx = useContext (CartContext);
+    const cartCtx = useContext(CartContext);
     const price = `$ ${props.price.toFixed(2)}`;
 
-    const addToCartHandler = amount =>{
+    const addToCartHandler = (amount) => {
         cartCtx.addItem({
             id: props.id,
             name: props.name,
             amount: amount,
-            price: props.price
-        })
-    }
+            price: props.price,
+        });
+    };
 
     return (
         <li className="listItemMeal">
@@ -24,9 +24,7 @@ const MealItem = (props) => {
                 <p className="listitemDescription">{props.description}</p>
                 <p className="listitemPrice">{price}</p>
             </div>
-            <div>
-                <MealItemform onAddToCart = {addToCartHandler}/>
-            </div>
+            <MealItemform onAddToCart={addToCartHandler} />
         </li>
     );
 };

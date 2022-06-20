@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 import Input from "../UI/Input";
 
 const MealItemform = (props) => {
-    
     const [amountIsValid, SetAmountIsValid] = useState(true);
     const amountInputRef = useRef();
 
@@ -22,13 +21,16 @@ const MealItemform = (props) => {
     };
 
     return (
-        <form className="meal-form" onSubmit={submitHandler}>
-            <Input
-                ref={amountInputRef}
-                label="Amount"
-                input={{ id: "amount_" + props.id, type: "number", min: "1", max: "5", step: "1", defaultValue: "1" }}
-            />
-            <button>+ Add</button>
+        <form onSubmit={submitHandler}>
+            <div className="meal-form">
+                <Input
+                    ref={amountInputRef}
+                    label="Amount"
+                    input={{ id: "amount_" + props.id, type: "number", min: "1", max: "5", step: "1", defaultValue: "1" }}
+                />
+                <button>+ Add</button>
+            
+            </div>
             {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
         </form>
     );

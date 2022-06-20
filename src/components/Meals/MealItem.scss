@@ -8,10 +8,9 @@ $blue: #11579b;
 
 .listItemMeal {
     div {
-        padding: 1rem;
         color: $fuchsia;
 
-        h3{
+        h3 {
             margin: 0 0 1rem;
         }
 
@@ -19,9 +18,12 @@ $blue: #11579b;
             margin: 0;
         }
 
-        p:first-of-type{
+        p:first-of-type {
             margin-bottom: 0.5rem;
         }
 
-  }
+        .listitemPrice {
+            color: $blue;
+        }
+    }
 }

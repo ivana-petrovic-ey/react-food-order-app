@@ -38,12 +38,12 @@ $blue: #11579b;
         border-radius: 15px;
         color: #fff;
         margin: auto;
-        width: 60%;
+        width: 70%;
         margin: auto;
         animation: meals-appear 1s ease-out forwards;
         animation-delay: 300ms;
 
-        ul {
+        .mealsList {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -55,17 +55,24 @@ $blue: #11579b;
                 background-color: #fff;
                 border-radius: 15px;
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                padding: 1rem;
+                gap: 1rem;
 
                 .meal-form {
-                    label {
-                        margin-right: 10px;
-                    }
-                    
-                    input {
-                        margin-right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    width: 85%;
+                    margin: auto;
 
+                    label {
+                        color: $fuchsia;
+                    }
+
+                    input {
                         &:focus-visible {
                             outline: none;
                             background-color: #fcf9f0;
@@ -84,9 +91,38 @@ $blue: #11579b;
                         background-color: $fuchsia;
                         color: #fff;
                     }
+
+                    @media (min-width: 576px) {
+                        width: 60%;
+                        margin: 0 0 0 auto;
+                    }
+
+                    @media (min-width: 1200px) {
+                        flex-direction: row;
+                        align-items: baseline;
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    color: $fuchsia;
+                }
+
+                @media (min-width: 576px) {
+                    flex-direction: row;
+                    align-items: center;
                 }
             }
         }
+
+        @media (min-width: 768px) {
+            width: 60%;
+        }
+        @media (min-width: 992px) {
+            width: 50%;
+        }
+
     }
 }
 

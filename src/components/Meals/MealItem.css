@@ -1,5 +1,4 @@
 .listItemMeal div {
-  padding: 1rem;
   color: #ff5d88;
 }
 .listItemMeal div h3 {
@@ -10,4 +9,7 @@
 }
 .listItemMeal div p:first-of-type {
   margin-bottom: 0.5rem;
+}
+.listItemMeal div .listitemPrice {
+  color: #11579b;
 }

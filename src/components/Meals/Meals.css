@@ -27,12 +27,12 @@
   border-radius: 15px;
   color: #fff;
   margin: auto;
-  width: 60%;
+  width: 70%;
   margin: auto;
   animation: meals-appear 1s ease-out forwards;
   animation-delay: 300ms;
 }
-.meals .mealsListContainer ul {
+.meals .mealsListContainer .mealsList {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -40,33 +40,73 @@
   gap: 1rem;
   flex-direction: column;
 }
-.meals .mealsListContainer ul .listItemMeal {
+.meals .mealsListContainer .mealsList .listItemMeal {
   background-color: #fff;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
-.meals .mealsListContainer ul .listItemMeal .meal-form label {
-  margin-right: 10px;
+.meals .mealsListContainer .mealsList .listItemMeal .meal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 85%;
+  margin: auto;
 }
-.meals .mealsListContainer ul .listItemMeal .meal-form input {
-  margin-right: 10px;
+.meals .mealsListContainer .mealsList .listItemMeal .meal-form label {
+  color: #ff5d88;
 }
-.meals .mealsListContainer ul .listItemMeal .meal-form input:focus-visible {
+.meals .mealsListContainer .mealsList .listItemMeal .meal-form input:focus-visible {
   outline: none;
   background-color: #fcf9f0;
   border: 1px solid #ffb74c;
 }
-.meals .mealsListContainer ul .listItemMeal .meal-form input,
-.meals .mealsListContainer ul .listItemMeal .meal-form button {
+.meals .mealsListContainer .mealsList .listItemMeal .meal-form input,
+.meals .mealsListContainer .mealsList .listItemMeal .meal-form button {
   padding: 0.5rem;
   border: 1px solid #ff5d88;
   border-radius: 5px;
 }
-.meals .mealsListContainer ul .listItemMeal .meal-form button {
+.meals .mealsListContainer .mealsList .listItemMeal .meal-form button {
   background-color: #ff5d88;
   color: #fff;
+}
+@media (min-width: 576px) {
+  .meals .mealsListContainer .mealsList .listItemMeal .meal-form {
+    width: 60%;
+    margin: 0 0 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .meals .mealsListContainer .mealsList .listItemMeal .meal-form {
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+    width: 100%;
+  }
+}
+.meals .mealsListContainer .mealsList .listItemMeal p {
+  color: #ff5d88;
+}
+@media (min-width: 576px) {
+  .meals .mealsListContainer .mealsList .listItemMeal {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .meals .mealsListContainer {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .meals .mealsListContainer {
+    width: 50%;
+  }
 }
 
 @keyframes meals-appear {
